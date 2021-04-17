@@ -17,10 +17,15 @@
 
 <div class="container text-center">
   <div class="row">
-    <form class="form-control" action="buscar.php" method="post">
-      <input class="form-control" type="text" id="name" name="dni" placeholder="Ingrese el DNI que desea buscar">
-      <input class="btn btn-success btn-sm" type="submit" name="" value="Buscar">
-    </form>
+    <div class="offset-md-3 col-md-6">
+      <img src="assets/img/mmpverde.png" width="200px">
+        <br><br>
+        <form class="form-control" action="buscar.php" method="post">
+          <input class="form-control" type="text" id="name" name="dni" placeholder="Ingrese el DNI que desea buscar">
+          <br>
+          <input class="btn btn-success btn-sm" type="submit" name="" value="Buscar">
+        </form>      
+    </div>
   </div>
 </div>
 

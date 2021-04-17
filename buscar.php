@@ -14,6 +14,8 @@
   <style type="text/css">
     body{
       font-size: 12px;
+      background-color: #1e7e34;
+    color: white;
     }
   </style>
 </head>
@@ -24,6 +26,7 @@
   require_once ("config/db.php");
   require_once ("config/conexion.php");
   $dni = $_POST['dni'];
+  date_default_timezone_set("America/Argentina/Buenos_Aires");
   ?>
 
 
@@ -31,7 +34,7 @@
   <div class="container text-center">
     <div class="row">
       <caption>Resultados para turnos en Hospital Municipal</caption>
-      <table class="table">
+      <table class="table table-dark">
         <thead>
           <tr>
             <th scope="col">Obra Social</th>
@@ -61,7 +64,11 @@
             ';
           }
         } else {
-          echo "*** Sin resultados ***";
+          echo '        
+          <tr>
+          <th> SIN RESULTADOS </th>     
+          </tr>
+          ';
         }
         ?>
         </tbody>
@@ -74,7 +81,7 @@
   <div class="container text-center">
     <div class="row">
       <caption>Tipos de Ayuda Social</caption>
-      <table class="table">
+      <table class="table table-dark">
         <thead>
           <tr>
             <th scope="col">ID Ayuda Social</th>
@@ -96,7 +103,11 @@
             ';
           }
         } else {
-          echo " *** Sin resultados *** ";
+          echo '        
+          <tr>
+          <th> SIN RESULTADOS </th>     
+          </tr>
+          ';
         }
         ?>
         </tbody>
@@ -110,7 +121,7 @@
   <div class="container text-center">
     <div class="row">
       <caption>Resultados para Ayuda Social</caption>
-      <table class="table">
+      <table class="table table-dark">
         <thead>
           <tr>
             <th scope="col">Fecha de Registro</th>
@@ -142,7 +153,11 @@
             ';
           }
         } else {
-          echo " *** Sin resultados *** ";
+          echo '        
+          <tr>
+          <th> SIN RESULTADOS </th>     
+          </tr>
+          ';
         }
         ?>
         </tbody>
@@ -154,7 +169,7 @@
   <div class="container text-center">
     <div class="row">
       <caption>Resultados para Materiales</caption>
-      <table class="table">
+      <table class="table table-dark">
         <thead>
           <tr>
             <th scope="col">Nro Encuesta</th>
@@ -182,7 +197,11 @@
             ';
           }
         } else {
-          echo "*** Sin resultados ***";
+          echo '        
+          <tr>
+          <th> SIN RESULTADOS </th>     
+          </tr>
+          ';
         }
         ?>
         </tbody>
@@ -195,7 +214,7 @@
   <div class="container text-center">
     <div class="row">
       <caption>Resultados para Remises</caption>
-      <table class="table">
+      <table class="table table-dark">
         <thead>
           <tr>
             <th scope="col">Fecha registro</th>
@@ -224,7 +243,11 @@
             ';
           }
         } else {
-          echo "*** Sin resultados ***";
+          echo '        
+          <tr>
+          <th> SIN RESULTADOS </th>     
+          </tr>
+          ';
         }
         ?>
         </tbody>
